@@ -25,10 +25,16 @@
 	position: absolute;
 	width: 100px:
 	height: 200px;
+	animation-name: anim;
 	background-color: transparent;
 	background-image: url(images/shootingstar.png);
+	animation-delay: 0.5ms;
+	background-size: cover;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-timing-function: infinite;
 }
-@keyframes move{
+@keyframes move {
 	from { 
 		top: 200px;
 		left: 0px;
@@ -38,3 +44,13 @@
 		left: 1000px;
 	}
 	}
+@keyframes anim {
+	0% {
+		top: -100px;
+		left: 200px;
+	}
+	100% {
+		top: 800px;
+		left: 800px;
+	}
+}
