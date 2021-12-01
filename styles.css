@@ -4,15 +4,37 @@
 	box-sizing: border-box;
 	font-size: 100%;
 }
-.box {
-	position: absolute;
-	width: 400px;
-	height: 300px;
+.background {
+	max-width: 100%;
 
+}
+.box {
+	position: absolute; 
+	width: 600px;
+	height: 400px;
+	background-color: transparent;
+	animation-name: move;
+	animation-delay: 0.3ms;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	background-image: url(images/car1.png);
+	background-size: cover;
 }
 .box1 {
 	position: absolute;
-	width: 500px;
-	height: 300px;
-
+	width: 100px:
+	height: 200px;
+	background-color: transparent;
+	background-image: url(images/shootingstar.png);
 }
+@keyframes move{
+	from { 
+		top: 200px;
+		left: 0px;
+	}
+	to {
+		top: 200px;
+		left: 1000px;
+	}
+	}
