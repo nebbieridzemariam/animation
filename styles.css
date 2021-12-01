@@ -8,6 +8,9 @@
 	max-width: 100%;
 
 }
+body {
+	overflow: hidden;
+}
 .box {
 	position: absolute; 
 	width: 600px;
@@ -23,8 +26,7 @@
 }
 .box1 {
 	position: absolute;
-	width: 100px:
-	height: 200px;
+	width: 100%;
 	animation-name: anim;
 	background-color: transparent;
 	background-image: url(images/shootingstar.png);
@@ -41,12 +43,12 @@
 	}
 	to {
 		top: 200px;
-		left: 1000px;
+		left: 1400px;
 	}
 	}
 @keyframes anim {
 	0% {
-		top: -100px;
+		top: 10px;
 		left: 200px;
 	}
 	100% {
