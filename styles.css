@@ -19,22 +19,50 @@ body {
 	animation-name: move;
 	animation-delay: 0.3ms;
 	animation-duration: 3s;
-	animation-iteration-count: infinite;
+	animation-iteration-count: 1;
 	animation-direction: alternate;
 	background-image: url(images/car1.png);
 	background-size: cover;
 }
 .box1 {
 	position: absolute;
-	width: 100%;
-	animation-name: anim;
+	width: 200px;
+	height: 600px;
+	animation-name: anim; 
 	background-color: transparent;
 	background-image: url(images/shootingstar.png);
-	animation-delay: 0.5ms;
+	animation-delay: 1s;
 	background-size: cover;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-direction: alternate;
-	animation-timing-function: infinite;
+	animation-iteration-count: 1;
+}
+.box2 {
+	position: absolute; 
+	width: 600px;
+	height: 400px;
+	background-color: transparent;
+	animation-name: anim1;
+	animation-delay: 3s;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	background-image: url(images/car2.png);
+	background-size: cover;
+}
+.box3 {
+	position: absolute;
+	width: 200px;
+	height: 600px;
+	animation-name: anim2; 
+	background-color: transparent;
+	background-image: url(images/shootingstar2.png);
+	animation-delay: 2s;
+	background-size: cover;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-iteration-count: 1;
+	
 }
 @keyframes move {
 	from { 
@@ -49,10 +77,37 @@ body {
 @keyframes anim {
 	0% {
 		top: 10px;
-		left: 200px;
+		left: 100px;
+	}
+	50% {
+		top: 400px;
+		left: 400px;
 	}
 	100% {
 		top: 800px;
-		left: 800px;
+		left: 1300px;
 	}
 }
+@keyframes anim1 {
+	from {
+		top: 200px;
+		right: 0px
+	}
+	to {
+		top: 200px;
+		right: 1400px;
+	}
+}
+@keyframes anim2 {
+	0% {
+		top: 10px;
+		right: 100px;
+	}
+	50% {
+		top: 400px;
+		right: 400px;
+	}
+	100% {
+		top: 800px;
+		right: 1300px;
+	}
