@@ -50,20 +50,7 @@ body {
 	background-image: url(images/car2.png);
 	background-size: cover;
 }
-.box3 {
-	position: absolute;
-	width: 200px;
-	height: 600px;
-	animation-name: anim2; 
-	background-color: transparent;
-	background-image: url(images/shootingstar2.png);
-	animation-delay: 2s;
-	background-size: cover;
-	animation-duration: 2s;
-	animation-direction: alternate;
-	animation-iteration-count: 1;
-	
-}
+
 @keyframes move {
 	from { 
 		top: 200px;
@@ -96,19 +83,5 @@ body {
 	to {
 		top: 200px;
 		right: 1400px;
-	}
-}
-@keyframes anim2 {
-	0% {
-		top: 10px;
-		right: 100px;
-	}
-	50% {
-		top: 400px;
-		right: 400px;
-	}
-	100% {
-		top: 800px;
-		right: 1300px;
 	}
 }
